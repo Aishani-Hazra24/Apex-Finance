@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Loan Applications" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+
+            <template if:true={applications}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={applications}
+                    columns={columns}
+                    hide-checkbox-column>
+                </lightning-datatable>
+            </template>
+
+            <template if:true={error}>
+                <div class="slds-text-color_error">
+                    Error loading loan applications.
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

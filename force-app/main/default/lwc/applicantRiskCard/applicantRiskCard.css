@@ -1,0 +1,37 @@
+.card-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.credit-score {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.risk {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.low {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.high {
+    background-color: #f8d7da;
+    color: #721c24;
+}

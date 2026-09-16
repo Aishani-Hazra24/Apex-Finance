@@ -1,0 +1,66 @@
+<template>
+    <lightning-card title="Create Your Account">
+        <div class="form-container">
+
+            <lightning-input
+                label="First Name"
+                value={firstName}
+                onchange={handleChange}
+                data-field="firstName"
+                required>
+            </lightning-input>
+
+            <lightning-input
+                label="Last Name"
+                value={lastName}
+                onchange={handleChange}
+                data-field="lastName"
+                required>
+            </lightning-input>
+
+            <lightning-input
+                label="Username"
+                value={username}
+                onchange={handleChange}
+                data-field="username"
+                required>
+            </lightning-input>
+
+            <lightning-input
+                type="email"
+                label="Email"
+                value={email}
+                onchange={handleChange}
+                data-field="email"
+                required>
+            </lightning-input>
+
+            <lightning-input
+                type="password"
+                label="Create Password"
+                value={password}
+                onchange={handleChange}
+                data-field="password"
+                required>
+            </lightning-input>
+
+            <lightning-input
+                type="password"
+                label="Confirm Password"
+                value={confirmPassword}
+                onchange={handleChange}
+                data-field="confirmPassword"
+                required>
+            </lightning-input>
+
+            <div class="button-container">
+                <lightning-button
+                    variant="brand"
+                    label="Sign Up"
+                    onclick={handleRegister}>
+                </lightning-button>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
